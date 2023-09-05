@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Register */
+.judul h2{
+    font-size: 90px;
+    line-height: 100%;
+    color: #F3F5F9;
+    font-family: Abhaya;
+    font-weight: 1000;
+}
+
+.judul p{
+    font-size: 20px;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.form h1{
+    font-size: 25px;
+    color: #91408D !important;
+    font-family: Poppins;
+    font-weight: 600 !important;
+}
+
+.form label{
+    color: #181C32;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 2%;
+}
+
+.form button{
+    justify-content: right;
+    border-radius: 9px;
+    background: #91408D !important;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.tombol{
+    justify-content: end !important;
+}
+
+@media only screen and (max-width: 992px){
+    .judul h2{
+        font-size: 70px;
+    }
+    .judul p{
+        font-size: 16px;
+    }
+    .judul{
+        text-align: center;
+    }
+    .tombol{
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .judul h2{
+        font-size: 50px;
+    }
+    .judul p{
+        font-size: 14px;
+    }
+}
+
+/* Login */
+
+.judul-login h2{
+    font-size: 90px!important;
+    line-height: 100%;
+    color: #F3F5F9;
+    font-family: Abhaya;
+    font-weight: 1000;
+}
+
+.judul-login h4{
+    font-size: 20px;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.h1-login{
+    margin-top: 20%;
+    font-size: 25px;
+    color: #91408D !important;
+    font-family: Poppins;
+    font-weight: 600 !important;
+}
+
+.button-login{
+    justify-content: right;
+    border-radius: 9px;
+    background: #91408D !important;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.button-login:hover{
+    color: #FFF;
+    background: #691564 !important;
+}
+
+.button-login :active {
+    background: #691564 !important;
+}
+
+.card{
+    margin-top: 10%;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+@media only screen and (max-width: 992px){
+    .card{
+        margin-top: 0%;
+    }
+    .h1-login{
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .judul-login{
+        text-align: center;
+    }
+    .judul-login h2{
+        font-size: 70px!important;
+    }
+    .judul-login h4{
+        font-size: 15px!important;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .judul-login h2{
+        font-size: 50px!important;
+    }
+    .judul-login h4{
+        font-size: 13px!important;
+    }
+}
