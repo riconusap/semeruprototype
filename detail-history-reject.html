@@ -51,14 +51,12 @@
     />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
+    </script>
   </head>
   <body>
-    <div class="d-flex flex-column flex-root font-primary">
+    <div class="d-flex flex-column flex-root">
       <!--begin::Page-->
       <div class="page d-flex flex-row flex-column-fluid">
         <!--begin::Wrapper-->
@@ -86,8 +84,8 @@
                   <!--end::Heaeder navs toggle-->
                   <!--begin::Logo-->
                   <a
-                    href="/dashboard-smr.html"
-                    class="d-flex align-items-center"
+                    href="/"
+                    class="d-flex align-items-start align-items-center"
                   >
                     <img
                       alt="Logo"
@@ -112,15 +110,15 @@
                         <li class="nav-item">
                           <a
                             class="nav-link"
-                            data-bs-toggle="tab"
+                            href="index.html"
                             href="#kt_header_navs_tab_1"
                             >Dashboard</a
                           >
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                           <a
                             class="nav-link active"
-                            data-bs-toggle="tab"
+                            href="report-management.html"
                             href="#kt_header_navs_tab_2"
                             >Report Management</a
                           >
@@ -128,7 +126,7 @@
                         <li class="nav-item">
                           <a
                             class="nav-link"
-                            data-bs-toggle="tab"
+                            href="user-profile.html"
                             href="#kt_header_navs_tab_3"
                             >User Profile</a
                           >
@@ -157,7 +155,10 @@
                     >
                       <!--begin::Symbol-->
                       <div class="symbol symbol-30px symbol-md-40px">
-                        <img src="assets/media/avatars/300-1.jpg" alt="image" />
+                        <img
+                          src="assets/media/semeru/Userpic.png"
+                          alt="image"
+                        />
                       </div>
                       <!--end::Symbol-->
                     </div>
@@ -176,7 +177,7 @@
                           <div class="symbol symbol-50px me-5">
                             <img
                               alt="Logo"
-                              src="assets/media/avatars/300-1.jpg"
+                              src="assets/media/semeru/Userpic.png"
                             />
                           </div>
                           <!--end::Avatar-->
@@ -235,7 +236,7 @@
           </div>
           <!--end::Header-->
 
-          <div class="container">
+          <div class="container mt-5">
             <div class="content flex-row-fluid" id="kt_content">
               <div
                 class="mb-5 px-5 py-6 rounded-2 bg-danger"
@@ -313,16 +314,118 @@
                     </div>
 
                     <!--begin::Body-->
-                    <div class="card-body py-3">
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
-                      <h1>😁😁😁😁😁😁😁😁😁😁😁😁</h1>
+                    <div class="card-body d-flex justify-content-center">
+                      <div>
+                        <!--begin::Timeline-->
+                        <div class="timeline-label">
+                          <!--begin::Item-->
+                          <div class="timeline-item">
+                            <!--begin::Label-->
+                            <div
+                              class="timeline-label fw-bold text-gray-800 fs-6 min-w-150px"
+                            >
+                              10 Agustus 2023 <br />
+                              14:37
+                            </div>
+                            <!--end::Label-->
+                            <!--begin::Badge-->
+                            <div class="timeline-badge">
+                              <i
+                                class="fa fa-genderless fs-1"
+                                style="color: #462862"
+                              ></i>
+                            </div>
+                            <!--end::Badge-->
+                            <!--begin::Text-->
+                            <div
+                              class="fw-mormal timeline-content text-muted ps-3"
+                            >
+                              Task Delegated
+                            </div>
+                            <!--end::Text-->
+                          </div>
+                          <!--end::Item-->
+                          <!--begin::Item-->
+                          <div class="timeline-item">
+                            <!--begin::Label-->
+                            <div
+                              class="timeline-label fw-bold text-gray-800 fs-6 min-w-150px"
+                            >
+                              10 Agustus 2023 <br />
+                              14:37
+                            </div>
+                            <!--end::Label-->
+                            <!--begin::Badge-->
+                            <div class="timeline-badge">
+                              <i
+                                class="fa fa-genderless fs-1"
+                                style="color: #3699ff"
+                              ></i>
+                            </div>
+                            <!--end::Badge-->
+                            <!--begin::Content-->
+                            <div class="timeline-content d-flex">
+                              <span class="fw-bold text-gray-800 ps-3"
+                                >Report Task</span
+                              >
+                            </div>
+                            <!--end::Content-->
+                          </div>
+                          <!--end::Item-->
+                          <div class="timeline-item">
+                            <!--begin::Label-->
+                            <div
+                              class="timeline-label fw-bold text-gray-800 fs-6 min-w-150px"
+                            >
+                              10 Agustus 2023 <br />
+                              14:37
+                            </div>
+                            <!--end::Label-->
+                            <!--begin::Badge-->
+                            <div class="timeline-badge">
+                              <i
+                                class="fa fa-genderless fs-1"
+                                style="color: #f4ad6b"
+                              ></i>
+                            </div>
+                            <!--end::Badge-->
+                            <!--begin::Text-->
+                            <div
+                              class="fw-mormal timeline-content text-muted ps-3"
+                            >
+                              Waiting Approval
+                            </div>
+                            <!--end::Text-->
+                          </div>
+                          <!--end::Item-->
+                          <!--begin::Item-->
+                          <div class="timeline-item">
+                            <!--begin::Label-->
+                            <div
+                              class="timeline-label fw-bold text-gray-800 fs-6 min-w-150px"
+                              style="color: #8abe69"
+                            >
+                              10 Agustus 2023 <br />
+                              14:37
+                            </div>
+                            <!--end::Label-->
+                            <!--begin::Badge-->
+                            <div class="timeline-badge">
+                              <i class="fa fa-genderless text-danger fs-1"></i>
+                            </div>
+                            <!--end::Badge-->
+                            <!--begin::Text-->
+                            <div
+                              class="timeline-content fw-bold fw-mormal text-gray-800 ps-3"
+                            >
+                              Report Has Been Rejected
+                            </div>
+                            <!--end::Text-->
+                          </div>
+                          <!--end::Item-->
+                        </div>
+                        <!--end::Timeline-->
+                      </div>
                     </div>
                     <!--end::Body-->
                   </div>
@@ -331,7 +434,13 @@
                 <!--end::Col-->
               </div>
               <div class="d-flex justify-content-end">
-                <button class="btn btn-primary-action">Kembali</button>
+                <a
+                  href="report-management.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="btn btn-primary-action">Kembali</button>
+                </a>
               </div>
             </div>
           </div>
@@ -419,8 +528,10 @@
     <!--end::Javascript-->
 
     <script>
-      KTUtil.onDOMContentLoaded(function () {
+      $(document).ready(function () {
+        $(".kt_datatable_zero_configuration-1").DataTable();
         $(".kt_datatable_zero_configuration-2").DataTable();
+        $(".kt_datatable_zero_configuration-3").DataTable();
       });
 
       const deleteButton = document.getElementById("deleteButton");
