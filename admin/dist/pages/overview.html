@@ -443,17 +443,17 @@ License: For each use you must have a valid license purchased only from above li
                                                 <ul class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bold">
                                                     <!--begin::Nav item-->
                                                     <li class="nav-item mt-2">
-                                                        <a class="nav-link text-active-primary ms-0 me-10 py-5 " href="../../../admin/account/overview.html">Overview</a>
+                                                        <a class="nav-link text-active-primary ms-0 me-10 py-5 active" href="overview.html">Overview</a>
                                                     </li>
                                                     <!--end::Nav item-->
                                                     <!--begin::Nav item-->
                                                     <li class="nav-item mt-2">
-                                                        <a class="nav-link text-active-primary ms-0 me-10 py-5" href="../../../admin/account/rangers.html">Rangers</a>
+                                                        <a class="nav-link text-active-primary ms-0 me-10 py-5 " href="rangers.html">Rangers</a>
                                                     </li>
                                                     <!--end::Nav item-->
-                                                    <!--begin::Nav item-->
+													<!--begin::Nav item-->
                                                     <li class="nav-item mt-2">
-                                                        <a class="nav-link text-active-primary ms-0 me-10 py-5 active" href="../../../admin/account/subkoordinator.html">Subkoordinator</a>
+                                                        <a class="nav-link text-active-primary ms-0 me-10 py-5 " href="subkoordinator.html">Subkoordinator</a>
                                                     </li>
                                                     <!--end::Nav item-->
                                                 </ul>
@@ -465,10 +465,10 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Row-->
 								<div class="card mb-5 mb-xxl-8" style="border-radius:10px!important;">
                                     <!--begin::Card header-->
-                                    <div class="card-header pt-5 pb-5">
+										<div class="card-header pt-5 pb-5">
 											<!--begin::Title-->
 											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bold text-gray-800" style="font-family: Poppins; font-weight: 500;" >List Data Subkoordinator</span>
+												<span class="card-label fw-bold text-gray-800" style="font-family: Poppins; font-weight: 500;" >Daftar Task Report</span>
 											</h3>
 											<!--end::Title-->
 										</div>
@@ -491,59 +491,93 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Card body-->
 										<div class="card-body pt-2">
 											<!--begin::Table-->
-											<table class="table align-middle table-row-dashed fs-6 gy-3 tabel">
+											<table class="table align-middle table-row-dashed fs-6 gy-3" id="kt_datatable_zero_configuration2">
 												<!--begin::Table head-->
 												<thead class="fw-bolder fs-6" style="margin-bottom: 50px!important; ">
 													<tr>
-														<th class="min-w-100px px-4" style="font-family: Poppins; font-weight: 500;">No</th>
-														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Nama</th>
-														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Jumlah Akun</th>
-                                                        <th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Actions</th>
+														<th class="min-w-100px px-4" style="font-family: Poppins; font-weight: 500;">No ID</th>
+														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Date</th>
+														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Durasi Task</th>
+														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Report Title</th>
+														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Delegate By</th>
+                                                        <th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Jenis Report</th>
+														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Status</th>
+														<th class="min-w-100px" style="font-family: Poppins; font-weight: 500;">Action</th>
 													</tr>
 												</thead>
 
 												<tbody class="fs-8">
-													<tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 60px!important;">
-                                                        <td class="px-4" style="font-family: Poppins; font-weight: 400;">01</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">Brad Simmons</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">4</td>
-                                                        <td>
-                                                            <a href="detail-subkoor.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #91408D; border-radius: 10px; scale: 0.7;">
-                                                                <div class="fas fa-chevron-right"></div>
-                                                            </a>
-                                                        </td>
+													<tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 50px!important;">
+														<td class="px-4" style="font-family: Poppins; font-weight: 400;">01</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 Juni 2023 16.00</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 hr</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Postingan Ferizy</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Jeremy</td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 10px; color: #FFFFFF; background: rgba(145, 64, 141, 0.63);">Postingan</span></td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 8px; color: rgba(39, 115, 74, 0.884)!important; background: rgba(29, 241, 124, 0.305);">Approved</span></td>
+														<td>
+															<a href="../pages/detail-userprofile.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #462862; border-radius: 10px; scale: 0.7;">
+																<div class="fas fa-chevron-right"></div>
+															</a>
+														</td>
 													</tr>
-                                                    <tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 60px!important;">
-                                                        <td class="px-4" style="font-family: Poppins; font-weight: 400;">02</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">Maria Fabiola</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">4</td>
-                                                        <td>
-                                                            <a href="detail-subkoor.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #91408D; border-radius: 10px; scale: 0.7;">
-                                                                <div class="fas fa-chevron-right"></div>
-                                                            </a>
-                                                        </td>
+                                                    <tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 50px!important;">
+														<td class="px-4" style="font-family: Poppins; font-weight: 400;">02</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 Juni 2023 16.00</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 hr</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Postingan Ferizy</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Jeremy</td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 10px; color: #FFFFFF; background: rgba(145, 64, 141, 0.63);">Postingan</span></td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 8px; color: rgba(115, 39, 39, 0.884)!important; background: rgba(241, 29, 29, 0.305);">Reject</span></td>
+														<td>
+															<a href="../pages/detail-userprofile.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #462862; border-radius: 10px; scale: 0.7;">
+																<div class="fas fa-chevron-right"></div>
+															</a>
+														</td>
 													</tr>
-                                                    <tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 60px!important;">
-                                                        <td class="px-4" style="font-family: Poppins; font-weight: 400;">03</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">Yuni Indriani</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">4</td>
-                                                        <td>
-                                                            <a href="detail-subkoor.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #91408D; border-radius: 10px; scale: 0.7;">
-                                                                <div class="fas fa-chevron-right"></div>
-                                                            </a>
-                                                        </td>
+                                                    <tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 50px!important;">
+														<td class="px-4" style="font-family: Poppins; font-weight: 400;">03</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 Juni 2023 16.00</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 hr</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Postingan Ferizy</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Jeremy</td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 10px; color: #FFFFFF; background: rgba(145, 64, 141, 0.63);">Postingan</span></td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 8px; color: rgb(221, 126, 25)!important; background: rgba(234, 231, 27, 0.664);">Waiting</span></td>
+														<td>
+															<a href="../pages/detail-userprofile.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #462862; border-radius: 10px; scale: 0.7;">
+																<div class="fas fa-chevron-right"></div>
+															</a>
+														</td>
 													</tr>
-                                                    <tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 60px!important;">
-                                                        <td class="px-4" style="font-family: Poppins; font-weight: 400;">04</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">Yuli Narti</td>
-                                                        <td style="font-family: Poppins; font-weight: 400;">4</td>
-                                                        <td>
-                                                            <a href="detail-subkoor.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #91408D; border-radius: 10px; scale: 0.7;">
-                                                                <div class="fas fa-chevron-right"></div>
-                                                            </a>
-                                                        </td>
+                                                    <tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 50px!important;">
+														<td class="px-4" style="font-family: Poppins; font-weight: 400;">04</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 Juni 2023 16.00</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 hr</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Postingan Ferizy</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Jeremy</td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 10px; color: #FFFFFF; background: rgba(145, 64, 141, 0.63);">Postingan</span></td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 8px; color: rgba(39, 115, 74, 0.884)!important; background: rgba(29, 241, 124, 0.305);">Approved</span></td>
+														<td>
+															<a href="../pages/detail-userprofile.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #462862; border-radius: 10px; scale: 0.7;">
+																<div class="fas fa-chevron-right"></div>
+															</a>
+														</td>
 													</tr>
-                                                </tbody>
+                                                    <tr class="px-5" style="background-color: #F8FAFB; border-style: solid; border-bottom-color: #D1D1D1; height: 50px!important;">
+														<td class="px-4" style="font-family: Poppins; font-weight: 400;">05</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 Juni 2023 16.00</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">24 hr</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Postingan Ferizy</td>
+                                                        <td style="font-family: Poppins; font-weight: 400;">Jeremy</td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 10px; color: #FFFFFF; background: rgba(145, 64, 141, 0.63);">Postingan</span></td>
+														<td><span class="badge py-3 px-4 fs-8" style="font-family: Poppins; font-weight: 400; border-radius: 8px; color: rgba(115, 39, 39, 0.884)!important; background: rgba(241, 29, 29, 0.305);">Reject</span></td>
+														<td>
+															<a href="../pages/detail-userprofile.html"class="btn btn-sm btn-icon btn-primary" style="background-color: #462862; border-radius: 10px; scale: 0.7;">
+																<div class="fas fa-chevron-right"></div>
+															</a>
+														</td>
+													</tr>
+
 												<!--end::Table body-->
 											</table>
 											<!--end::Table-->
@@ -622,10 +656,8 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="../assets/js/custom/utilities/modals/create-app.js"></script>
 		<script src="../assets/js/custom/utilities/modals/users-search.js"></script>
 		<script>
-			oTable = $(".tabel").DataTable();
-            $('.search').keyup(function(){
-                oTable.search($(this).val()).draw() ;
-            })
+			$("#kt_datatable_zero_configuration").DataTable();
+			$("#kt_datatable_zero_configuration1").DataTable();
 		</script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
