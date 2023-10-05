@@ -158,6 +158,48 @@ License: For each use you must have a valid license purchased only from above li
           <div class="aside-menu flex-column-fluid">
             <!--begin::Aside Menu-->
             <div
+          id="kt_aside"
+          class="aside aside-dark aside-hoverable"
+          data-kt-drawer="true"
+          data-kt-drawer-name="aside"
+          data-kt-drawer-activate="{default: true, lg: false}"
+          data-kt-drawer-overlay="true"
+          data-kt-drawer-width="{default:'200px', '300px': '250px'}"
+          data-kt-drawer-direction="start"
+          data-kt-drawer-toggle="#kt_aside_mobile_toggle"
+        >
+          <!--begin::Brand-->
+          <div
+            class="aside-logo flex-column-auto justify-content-centers"
+            id="kt_aside_logo"
+          >
+            <!--begin::Logo-->
+            <a href="../index.html">
+              <img
+                alt="Logo"
+                src="../../../admin/src/media/logos/SEMERU.png"
+                class="h-20px logo"
+              />
+            </a>
+            <!--end::Logo-->
+            <!--begin::Aside toggler-->
+            <div
+              id="kt_aside_toggle"
+              class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle me-n2"
+              data-kt-toggle="true"
+              data-kt-toggle-state="active"
+              data-kt-toggle-target="body"
+              data-kt-toggle-name="aside-minimize"
+            >
+              <i class="ki-outline ki-double-left fs-1 rotate-180"></i>
+            </div>
+            <!--end::Aside toggler-->
+          </div>
+          <!--end::Brand-->
+          <!--begin::Aside menu-->
+          <div class="aside-menu flex-column-fluid">
+            <!--begin::Aside Menu-->
+            <div
               class="hover-scroll-overlay-y py-2"
               id="kt_aside_menu_wrapper"
               data-kt-scroll="true"
@@ -178,7 +220,7 @@ License: For each use you must have a valid license purchased only from above li
                   <!--begin:Menu link-->
                   <a class="menu-link" href="../index.html">
                     <span class="menu-icon">
-                      <img src="../../src/media/Vector.svg" alt="" />
+                      <img src="../../admin/src/media/Vector.svg" alt="" />
                     </span>
                     <span class="menu-title">Dashboard</span>
                   </a>
@@ -188,12 +230,12 @@ License: For each use you must have a valid license purchased only from above li
                 <!--begin:Menu item-->
                 <div
                   data-kt-menu-trigger="click"
-                  class="menu-item menu-accordion"
+                  class="menu-item menu-accordion hover show"
                 >
                   <!--begin:Menu link-->
                   <span class="menu-link">
                     <span class="menu-icon">
-                      <img src="../../src/media/Vector-1.svg" alt="" />
+                      <img src="../../admin/src/media/Vector-1.svg" alt="" />
                     </span>
                     <span class="menu-title">Report Management</span>
                     <span class="menu-arrow"></span>
@@ -202,9 +244,9 @@ License: For each use you must have a valid license purchased only from above li
                   <!--begin:Menu sub-->
                   <div class="menu-sub menu-sub-accordion">
                     <!--begin:Menu item-->
-                    <div class="menu-item here show">
+                    <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="my-report.html">
+                      <a class="menu-link active" href="my-report.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -240,8 +282,6 @@ License: For each use you must have a valid license purchased only from above li
                   </div>
                   <!--end:Menu sub-->
                 </div>
-                <!--end:Menu item-->
-                <!--begin:Menu item-->
                 <div
                   data-kt-menu-trigger="click"
                   class="menu-item menu-accordion"
@@ -249,7 +289,7 @@ License: For each use you must have a valid license purchased only from above li
                   <!--begin:Menu link-->
                   <span class="menu-link">
                     <span class="menu-icon">
-                      <img src="../../src/media/Group 66098.svg" alt="" />
+                      <img src="../../admin/src/media/Group 66098.svg" alt="" />
                     </span>
                     <span class="menu-title">Data Pengelolaan</span>
                     <span class="menu-arrow"></span>
@@ -264,7 +304,7 @@ License: For each use you must have a valid license purchased only from above li
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
-                        <span class="menu-title">Daftar User</span>
+                        <span class="menu-title">Daftar Ranger</span>
                       </a>
                       <!--end:Menu link-->
                     </div>
@@ -284,77 +324,12 @@ License: For each use you must have a valid license purchased only from above li
                   </div>
                   <!--end:Menu sub-->
                 </div>
-                <div
-                  data-kt-menu-trigger="click"
-                  class="menu-item menu-accordion"
-                >
-                  <!--begin:Menu link-->
-                  <span class="menu-link">
-                    <span class="menu-icon">
-                      <img src="../../src/media/Group.svg" alt="" />
-                    </span>
-                    <span class="menu-title">Master Data</span>
-                    <span class="menu-arrow"></span>
-                  </span>
-                  <!--end:Menu link-->
-                  <!--begin:Menu sub-->
-                  <div class="menu-sub menu-sub-accordion">
-                    <!--begin:Menu item-->
-                    <div class="menu-item">
-                      <!--begin:Menu link-->
-                      <a class="menu-link" href="jenis-report.html">
-                        <span class="menu-bullet">
-                          <span class="bullet bullet-dot"></span>
-                        </span>
-                        <span class="menu-title">Jenis Report</span>
-                      </a>
-                      <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                    <!--begin:Menu item-->
-                    <div class="menu-item">
-                      <!--begin:Menu link-->
-                      <a class="menu-link" href="project.html">
-                        <span class="menu-bullet">
-                          <span class="bullet bullet-dot"></span>
-                        </span>
-                        <span class="menu-title">Project</span>
-                      </a>
-                      <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                  </div>
-                  <!--end:Menu sub-->
-                </div>
-                <!--end:Menu item-->
-                <!--begin:Menu item-->
-                <div class="menu-item menu-accordion">
-                  <!--begin:Menu link-->
-                  <a class="menu-link" href="finance.html">
-                    <span class="menu-icon">
-                      <img src="../../src/media/icons/Group.svg" alt="" />
-                    </span>
-                    <span class="menu-title">Finance</span>
-                  </a>
-                  <!--end:Menu link-->
-                </div>
-                <div class="menu-item menu-accordion">
-                  <!--begin:Menu link-->
-                  <a
-                    class="menu-item menu-accordion menu-link"
-                    href="../pages/userprofile.html"
-                  >
-                    <span class="menu-icon">
-                      <img src="../../src/media/Vector-2.svg" alt="" />
-                    </span>
-                    <span class="menu-title">User Profile</span>
-                  </a>
-                  <!--end:Menu link-->
-                </div>
-                <!--end:Menu item-->
               </div>
               <!--end::Menu-->
             </div>
+          </div>
+          <!--end::Aside menu-->
+        </div>
           </div>
           <!--end::Aside menu-->
         </div>
@@ -417,7 +392,7 @@ License: For each use you must have a valid license purchased only from above li
                       data-kt-menu-flip="bottom"
                     >
                       <img
-                        src="../assets/media/avatars/300-1.jpg"
+                        src="../../admin/dist/assets/media/avatars/300-1.jpg"
                         alt="metronic"
                       />
                     </div>
@@ -435,7 +410,7 @@ License: For each use you must have a valid license purchased only from above li
                           <div class="symbol symbol-50px me-5">
                             <img
                               alt="Logo"
-                              src="../assets/media/avatars/300-1.jpg"
+                              src="../../admin/dist/assets/media/avatars/300-1.jpg"
                             />
                           </div>
                           <!--end::Avatar-->
@@ -589,18 +564,18 @@ License: For each use you must have a valid license purchased only from above li
                     <div class="row g-9 mb-8">
                       <!--begin::Col-->
                       <div
-                        class="col-md-6 fv-row"
+                        class="col-md-12 fv-row"
                         style="border-radius: 10px !important"
                       >
-                        <label class="fs-6 fw-semibold mb-2">Date</label>
+                        <label class="fs-6 fw-semibold mb-2">Deadline</label>
                         <!--begin::Input-->
                         <div
                           class="position-relative d-flex align-items-center"
                         >
                           <!--begin::Datepicker-->
                           <input
-                            type="date"
-                            class="form-control form-control-solid ps-12"
+                            type="datetime-local"
+                            class="form-control form-control-solid"
                             placeholder="Select a date"
                             style="
                               border: 1px solid #000;
@@ -608,32 +583,6 @@ License: For each use you must have a valid license purchased only from above li
                               border-radius: 6px;
                             "
                             name="date"
-                          />
-                          <!--end::Datepicker-->
-                        </div>
-                        <!--end::Input-->
-                      </div>
-                      <!--end::Col-->
-                      <!--begin::Col-->
-                      <div
-                        class="col-md-6 fv-row"
-                        style="border-radius: 10px !important"
-                      >
-                        <label class="fs-6 fw-semibold mb-2">Hour</label>
-                        <!--begin::Input-->
-                        <div
-                          class="position-relative d-flex align-items-center"
-                        >
-                          <!--begin::Datepicker-->
-                          <input
-                            type="time"
-                            class="form-control form-control-solid ps-12"
-                            placeholder="Select a date"
-                            style="
-                              border: 1px solid #000;
-                              background: #f3f6f9 !important;
-                              border-radius: 6px;
-                            "
                           />
                           <!--end::Datepicker-->
                         </div>
@@ -671,7 +620,7 @@ License: For each use you must have a valid license purchased only from above li
                           >Delegated to</label
                         >
                         <select
-                          class="form-select form-select-solid"
+                          class="form-select form-select-solid selectTypeDelegated"
                           data-control="select2"
                           data-hide-search="true"
                           data-placeholder="Select a Category Member"
@@ -711,6 +660,28 @@ License: For each use you must have a valid license purchased only from above li
                           <option value="3">Niel Owen</option>
                           <option value="4">Olivia Wild</option>
                           <option value="5">Sean Bean</option>
+                        </select>
+                      </div>
+                      <div class="col-md-12 fv-row col-ranger d-none">
+                        <label class="fs-6 fw-semibold mb-2"
+                          >Select Ranger</label
+                        >
+                        <select
+                          class="form-select form-select-solid"
+                          data-control="select2"
+                          data-hide-search="true"
+                          data-placeholder="Select Ranger"
+                          name="target_assign2"
+                          style="
+                            border: 1px solid #000;
+                            background: #f3f6f9 !important;
+                            border-radius: 6px;
+                          "
+                        >
+                          <option value="">Select ranger...</option>
+                          <option value="1">Fauzan Uwaiz Al-Khorni	</option>
+                          <option value="2">Qariba Zaki Sadiqa</option>
+                          <option value="3">Nurzaki hizbullah</option>
                         </select>
                       </div>
                       <!--end::Col-->
@@ -816,7 +787,7 @@ License: For each use you must have a valid license purchased only from above li
                       >
                         <option value="">Select Project...</option>
                         <option value="1">Kereta Api Indonesia</option>
-                        <option value="2">Ferizy</option>
+                        <option value="2">ASDP</option>
                       </select>
                     </div>
                     <!--begin::Input group-->
@@ -930,11 +901,11 @@ License: For each use you must have a valid license purchased only from above li
       var hostUrl = "assets/";
     </script>
     <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-    <script src="../assets/plugins/global/plugins.bundle.js"></script>
-    <script src="../assets/js/scripts.bundle.js"></script>
+    <script src="../../admin/dist/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="../../admin/dist/assets/js/scripts.bundle.js"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Vendors Javascript(used for this page only)-->
-    <script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+    <script src="../../admin/dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
@@ -946,18 +917,27 @@ License: For each use you must have a valid license purchased only from above li
     <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-    <script src="../assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <script src="../../admin/dist/assets/plugins/custom/datatables/datatables.bundle.js"></script>
     <!--end::Vendors Javascript-->
     <!--begin::Custom Javascript(used for this page only)-->
-    <script src="../assets/js/widgets.bundle.js"></script>
-    <script src="../assets/js/custom/widgets.js"></script>
-    <script src="../assets/js/custom/apps/chat/chat.js"></script>
-    <script src="../assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-    <script src="../assets/js/custom/utilities/modals/create-app.js"></script>
-    <script src="../assets/js/custom/utilities/modals/users-search.js"></script>
+    <script src="../../admin/dist/assets/js/widgets.bundle.js"></script>
+    <script src="../../admin/dist/assets/js/custom/widgets.js"></script>
+    <script src="../../admin/dist/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="../../admin/dist/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="../../admin/dist/assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="../../admin/dist/assets/js/custom/utilities/modals/users-search.js"></script>
     <script>
       $(function () {
         $("#date").datepicker();
+        
+      });
+      $('.selectTypeDelegated').on('change', function() {
+        $('.col-ranger').addClass('d-none');
+        if (this.value == 2) {
+          $('.col-ranger').addClass('d-none');
+        } else {
+          $('.col-ranger').removeClass('d-none');
+        }
       });
     </script>
     <!--end::Custom Javascript-->
